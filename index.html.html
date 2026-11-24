@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Beginner-friendly online Kiswahili lessons with Kiswahili with You.">
+  <title>Kiswahili with You | Learn Kiswahili with Confidence</title>
+  <style>
+    :root {
+      --bg: #0c0c0d;
+      --panel: #171719;
+      --panel2: #202022;
+      --gold: #d8b45a;
+      --gold-light: #f1d98e;
+      --text: #f7f4ed;
+      --muted: #b8b2a5;
+      --line: rgba(216,180,90,.24);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1100px, calc(100% - 40px)); margin: auto; }
+    header {
+      border-bottom: 1px solid var(--line); position: sticky; top: 0;
+      background: rgba(12,12,13,.94); backdrop-filter: blur(12px); z-index: 5;
+    }
+    .nav { min-height: 76px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { font-weight: 800; letter-spacing: .02em; }
+    .brand span { color: var(--gold); }
+    nav { display:flex; gap:24px; color: var(--muted); font-size: .94rem; }
+    nav a:hover { color: var(--gold-light); }
+    .hero { padding: 92px 0 78px; position:relative; overflow:hidden; }
+    .hero:after {
+      content:""; position:absolute; width:440px; height:440px; border-radius:50%;
+      border:1px solid rgba(216,180,90,.13); right:-130px; top:20px;
+      box-shadow: 0 0 0 38px rgba(216,180,90,.025), 0 0 0 78px rgba(216,180,90,.02);
+      pointer-events:none;
+    }
+    .eyebrow { color:var(--gold); text-transform:uppercase; letter-spacing:.18em; font-size:.78rem; font-weight:800; }
+    h1 { font-size:clamp(2.8rem, 7vw, 5.5rem); line-height:1.03; letter-spacing:-.055em; max-width:760px; margin:18px 0; }
+    h1 span { color:var(--gold); }
+    .lead { max-width:620px; color:var(--muted); font-size:1.12rem; }
+    .actions { display:flex; gap:14px; flex-wrap:wrap; margin-top:30px; }
+    .btn { display:inline-flex; justify-content:center; align-items:center; padding:13px 21px; border-radius:8px; font-weight:750; border:1px solid var(--gold); }
+    .primary { background:var(--gold); color:#17130a; }
+    .secondary { color:var(--gold-light); }
+    .section { padding:72px 0; border-top:1px solid var(--line); }
+    .section h2 { font-size:clamp(1.9rem,4vw,2.8rem); line-height:1.15; margin:8px 0 14px; }
+    .intro { color:var(--muted); max-width:650px; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:30px; }
+    .card { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:24px; }
+    .number { color:var(--gold); font-size:1.55rem; font-weight:850; }
+    .card h3 { margin:8px 0; font-size:1.12rem; }
+    .card p { margin:0; color:var(--muted); }
+    .pricebox { max-width:520px; background:linear-gradient(145deg,#1c1a15,#121213); border:1px solid var(--gold); border-radius:18px; padding:30px; margin-top:28px; }
+    .price { font-size:3rem; font-weight:900; letter-spacing:-.04em; color:var(--gold-light); }
+    .price small { font-size:1rem; color:var(--muted); font-weight:500; letter-spacing:0; }
+    ul { padding-left:20px; color:var(--muted); }
+    li { margin:7px 0; }
+    .phrase { color:var(--gold-light); font-size:1.3rem; font-weight:750; }
+    .contact { background:var(--panel); border:1px solid var(--line); padding:30px; border-radius:16px; margin-top:26px; }
+    footer { border-top:1px solid var(--line); padding:28px 0; color:var(--muted); font-size:.9rem; }
+    .gold { color:var(--gold); }
+    @media (max-width:760px) {
+      .nav { padding:14px 0; align-items:flex-start; flex-direction:column; }
+      nav { gap:15px; flex-wrap:wrap; }
+      .hero { padding:68px 0 58px; }
+      .grid { grid-template-columns:1fr; }
+      .section { padding:55px 0; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">KISWAHILI <span>WITH YOU</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#lessons">Lessons</a>
+      <a href="#about">About</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Your Kiswahili journey starts here</div>
+      <h1>Speak Kiswahili.<br><span>Connect with more.</span></h1>
+      <p class="lead">Friendly, beginner-focused online lessons that help you build confidence in everyday Kiswahili, one useful phrase at a time.</p>
+      <div class="actions">
+        <a class="btn primary" href="#contact">Ask about a lesson</a>
+        <a class="btn secondary" href="#lessons">Explore lessons</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="lessons">
+    <div class="wrap">
+      <div class="eyebrow">What you'll learn</div>
+      <h2>Useful Kiswahili for real conversations.</h2>
+      <p class="intro">Start with the basics and practise language you can use in everyday situations. Lessons are designed for learners who are new to Kiswahili.</p>
+      <div class="grid">
+        <article class="card"><div class="number">01</div><h3>Greetings & introductions</h3><p>Say hello, introduce yourself and ask friendly questions.</p></article>
+        <article class="card"><div class="number">02</div><h3>Everyday vocabulary</h3><p>Learn useful words for people, places, food and daily activities.</p></article>
+        <article class="card"><div class="number">03</div><h3>Simple conversations</h3><p>Build sentences, practise pronunciation and gain confidence speaking.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="eyebrow">Karibu!</div>
+      <h2>A relaxed place to begin learning.</h2>
+      <p class="intro">Kiswahili with You makes learning approachable. We focus on clear explanations, useful examples and plenty of practice. No previous Kiswahili knowledge is needed.</p>
+      <div class="card" style="max-width:720px;margin-top:26px">
+        <div class="phrase">“Habari! Jina lako nani?”</div>
+        <p style="color:var(--muted);margin:5px 0 0">Hello! What is your name?</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="pricing">
+    <div class="wrap">
+      <div class="eyebrow">Simple pricing</div>
+      <h2>One clear starting price.</h2>
+      <div class="pricebox">
+        <div class="price">KSh 500 <small>/ 30-minute lesson</small></div>
+        <ul>
+          <li>Beginner-friendly learning</li>
+          <li>Greetings, vocabulary and conversation practice</li>
+          <li>Online lesson arranged by email</li>
+        </ul>
+        <a class="btn primary" href="#contact">Enquire about a lesson</a>
+      </div>
+      <p class="intro" style="font-size:.9rem;margin-top:14px">Lesson times are arranged in advance. Please confirm availability before making any payment.</p>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="eyebrow">Get in touch</div>
+      <h2>Ready to say “Habari”?</h2>
+      <p class="intro">Send an email to ask a question or enquire about a beginner lesson.</p>
+      <div class="contact">
+        <p style="margin-top:0;color:var(--muted)">Email us:</p>
+        <!-- Replace the example address below with a dedicated, guardian-managed teaching email before publishing. -->
+        <a class="btn primary" href="mailto:YOUR-EMAIL@example.com?subject=Kiswahili%20lesson%20enquiry">Email about a lesson</a>
+        <p style="color:var(--muted);font-size:.85rem;margin-bottom:0">Website owner: replace YOUR-EMAIL@example.com with your teaching email before sharing this website.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="year">2026</span> Kiswahili with You. Learn at your own pace. <span class="gold">Karibu!</span></div>
+</footer>
+</body>
+</html>
